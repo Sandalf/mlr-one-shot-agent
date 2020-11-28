@@ -28,31 +28,14 @@ public class OneShotAgent extends Agent {
         private static final long serialVersionUID = 1L;
 
         public void action() {
-            System.out.println("Agent's action method executed");
             Object[] args = getArguments();
-            // if (args.length == 0) {
-            //     System.out.println("You must pass an x value as an argument");
-            //     return;
-            // }
 
-            String s;
             double xArg = 0;
             if (args != null && args.length > 0) {
-                for (int i = 0; i < args.length; i++) {
-                    s = (String) args[i];
-                    System.out.println("p" + i + ": " + s);
-                }
-
-                // Extracting the integer.
-                // int i = Integer.parseInt((String) args[0]);
-                // System.out.println("i*i= " + i * i);
                 xArg = Double.parseDouble((String) args[0]);
             } else {
                 System.out.println("You must pass an x value as an argument");
             }
-
-            // double xArg = Double.parseDouble(args[0]);
-            // double xArg = 2020;
     
             // Benetton data set: https://www.displayr.com/what-is-linear-regression/
             // X: Advertising, Y: Sales
@@ -86,7 +69,6 @@ public class OneShotAgent extends Agent {
         }
 
         public int onEnd() {
-            System.out.println("Agent's onEnd method executed");
             myAgent.doDelete();
             return super.onEnd();
         }
