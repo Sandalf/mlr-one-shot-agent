@@ -1,5 +1,5 @@
 
-# Hands on 3 - Artificial Intelligence
+# Hands on 5 - Artificial Intelligence
 
 # How to compile
 From root directory run:
