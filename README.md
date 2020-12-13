@@ -11,5 +11,5 @@ javac -cp lib/jade.jar src/examples/behaviours/*.java -d classes/
 # How to execute
 From root directory run an pass the `x` value as a parameter:
 ```shell
-java -cp lib/jade.jar:classes/ jade.Boot -gui 'oneAgent:examples.behaviours.OneShotAgent(2020)'
+java -cp lib/jade.jar:classes/ jade.Boot -gui 'oneAgent:examples.behaviours.OneShotAgent(71.1,32.1)'
 ```
